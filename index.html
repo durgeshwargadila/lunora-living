@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunora Spaces - Modern Interior Design</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false,
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>LUNORA</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="designers.html">Designers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="background-image: url('images/home_hero.jpg');">
+    <div class="hero-content">
+      <h1>Create Your Dream Space</h1>
+      <p>Discover luxury interior design that transforms your home into a sanctuary of elegance and comfort</p>
+      <a href="explore.html" class="cta-btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- FEATURED DESIGNS SECTION -->
+  <section id="featured">
+    <div class="section-title">
+      <h2>Featured Designs</h2>
+      <p>Explore our latest curated collection of stunning interior design projects</p>
+    </div>
+    <div class="design-grid">
+      <div class="design-card scroll-reveal !bg-[#4169E1]/50 text-white">
+        <img src="images/index_living_room.jpg" alt="Modern Minimalist Living" class="design-card-image">
+        <div class="design-card-content">
+          <span class="card-category !bg-[#ffffff]/20 !text-white">Living Room</span>
+          <h3 class="!text-white">Modern Minimalist Living</h3>
+          <p class="!text-slate-100">A contemporary living space with clean lines and neutral tones, perfect for relaxation and entertaining.</p>
+          <a href="explore.html" class="btn btn-outline !border-white !text-white hover:!bg-white hover:!text-[#4169E1]">View More</a>
+        </div>
+      </div>
+
+      <div class="design-card scroll-reveal !bg-[#4169E1]/50 text-white">
+        <img src="images/index_bedroom.jpg" alt="Luxury Sleep Sanctuary" class="design-card-image">
+        <div class="design-card-content">
+          <span class="card-category !bg-[#ffffff]/20 !text-white">Bedroom</span>
+          <h3 class="!text-white">Luxury Sleep Sanctuary</h3>
+          <p class="!text-slate-100">An elegant bedroom design featuring soft textures and warm lighting for the ultimate comfort experience.</p>
+          <a href="explore.html" class="btn btn-outline !border-white !text-white hover:!bg-white hover:!text-[#4169E1]">View More</a>
+        </div>
+      </div>
+
+      <div class="design-card scroll-reveal !bg-[#4169E1]/50 text-white">
+        <img src="images/index_kitchen.jpg" alt="Contemporary Kitchen Design" class="design-card-image">
+        <div class="design-card-content">
+          <span class="card-category !bg-[#ffffff]/20 !text-white">Kitchen</span>
+          <h3 class="!text-white">Contemporary Kitchen Design</h3>
+          <p class="!text-slate-100">A sophisticated kitchen space blending functionality with stunning aesthetics and premium finishes.</p>
+          <a href="explore.html" class="btn btn-outline !border-white !text-white hover:!bg-white hover:!text-[#4169E1]">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section style="background-color: var(--accent-color);">
+    <div class="section-title">
+      <h2>Why Choose Lunora</h2>
+      <p>We blend creativity with functionality to create spaces that tell your unique story</p>
+    </div>
+    <div class="design-grid">
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);">
+        <h3 style="color: white; margin-bottom: 1rem;">Expert Designers</h3>
+        <p class="!text-slate-100">Our team of experienced interior designers brings innovation and elegance to every project.</p>
+      </div>
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);">
+        <h3 style="color: white; margin-bottom: 1rem;">Quality Materials</h3>
+        <p class="!text-slate-100">We use only premium materials and sustainable solutions for lasting beauty and durability.</p>
+      </div>
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);">
+        <h3 style="color: white; margin-bottom: 1rem;">Custom Solutions</h3>
+        <p class="!text-slate-100">Every design is tailored to match your lifestyle, preferences, and unique vision for your space.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section>
+    <div class="section-title">
+      <h2>Client Testimonials</h2>
+      <p>What our satisfied clients have to say about their transformed spaces</p>
+    </div>
+    <div class="testimonials-container">
+      <div class="testimonial scroll-reveal !bg-[#4169E1]/50 text-white !border-white/30">
+        <div class="testimonial-quote !text-white/20">"</div>
+        <div class="stars !text-yellow-400">★★★★★</div>
+        <p class="!text-slate-100">"Lunora transformed our home into a luxurious sanctuary. The attention to detail was incredible!"</p>
+        <div class="testimonial-author !text-white">Sarah Mitchell</div>
+        <div class="testimonial-role !text-slate-200">Homeowner</div>
+      </div>
+
+      <div class="testimonial scroll-reveal !bg-[#4169E1]/50 text-white !border-white/30">
+        <div class="testimonial-quote !text-white/20">"</div>
+        <div class="stars !text-yellow-400">★★★★★</div>
+        <p class="!text-slate-100">"Professional, creative, and truly understood our vision. We couldn't be happier with the results."</p>
+        <div class="testimonial-author !text-white">James Robertson</div>
+        <div class="testimonial-role !text-slate-200">Business Owner</div>
+      </div>
+
+      <div class="testimonial scroll-reveal !bg-[#4169E1]/50 text-white !border-white/30">
+        <div class="testimonial-quote !text-white/20">"</div>
+        <div class="stars !text-yellow-400">★★★★★</div>
+        <p class="!text-slate-100">"Working with Lunora was seamless. They brought modern elegance to our space beautifully."</p>
+        <div class="testimonial-author !text-white">Emma Williams</div>
+        <div class="testimonial-role !text-slate-200">Design Enthusiast</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; text-align: center; border-radius: 12px;">
+    <h2 style="color: white;">Ready to Transform Your Space?</h2>
+    <p style="color: #f0f0f0; font-size: 1.1rem; margin-bottom: 2rem;">Schedule a free consultation with our design experts today</p>
+    <a href="contact.html" class="btn" style="background-color: white; color: var(--primary-color);">Get Started</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>LUNORA SPACES</h4>
+        <p>Transforming homes into luxurious sanctuaries with modern interior design expertise.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="designers.html">Designers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <p style="margin-bottom: 1rem;">Connect with us on social media</p>
+        <div style="display: flex; gap: 1rem;">
+          <a href="#" style="color: var(--primary-color); font-weight: 600;">Instagram</a>
+          <a href="#" style="color: var(--primary-color); font-weight: 600;">Pinterest</a>
+          <a href="#" style="color: var(--primary-color); font-weight: 600;">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Lunora Spaces. All rights reserved. | Designed with elegance and care.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

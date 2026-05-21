@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Lunora Spaces</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false,
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>LUNORA</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="designers.html">Designers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="background-image: url('images/contact_hero.jpg');">
+    <div class="hero-content">
+      <h1>Get In Touch</h1>
+      <p>Let's discuss your interior design dreams and how we can bring them to life</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section>
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="scroll-reveal">
+        <h2 style="margin-bottom: 2rem;">Send us a Message</h2>
+        <form id="contact-form">
+          <div class="form-success"></div>
+
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+            <span class="form-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com">
+            <span class="form-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+            <span class="form-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject">
+              <option value="">Select a subject</option>
+              <option value="consultation">Design Consultation</option>
+              <option value="project">Project Inquiry</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="form-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project and design goals"></textarea>
+            <span class="form-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="scroll-reveal">
+        <h2 style="margin-bottom: 2rem;">Contact Information</h2>
+
+        <div class="!bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+          <h4 style="margin-bottom: 0.5rem; color: white;">📍 Address</h4>
+          <p class="!text-slate-100" style="margin-bottom: 0;">123 Design Street<br>Creative City, CC 12345<br>United States</p>
+        </div>
+
+        <div class="!bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+          <h4 style="margin-bottom: 0.5rem; color: white;">📞 Phone</h4>
+          <p class="!text-slate-100" style="margin-bottom: 0;">+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+        </div>
+
+        <div class="!bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+          <h4 style="margin-bottom: 0.5rem; color: white;">✉️ Email</h4>
+          <p class="!text-slate-100" style="margin-bottom: 0;">info@lumoraspaces.com<br>hello@lumoraspaces.com</p>
+        </div>
+
+        <div class="!bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+          <h4 style="margin-bottom: 0.5rem; color: white;">🕐 Hours</h4>
+          <p class="!text-slate-100" style="margin-bottom: 0;">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWROOM SECTION -->
+  <section class="showroom-section">
+    <div class="showroom-grid">
+      <div class="showroom-image-container scroll-reveal">
+        <img src="images/hyderabad_showroom.jpg" alt="Hyderabad Showroom" class="showroom-image">
+      </div>
+      <div class="showroom-info scroll-reveal">
+        <h3>Visit Our Hyderabad Showroom</h3>
+        <p class="showroom-desc">
+          Experience the pinnacle of luxury interior design in person. Walk through our beautifully curated room displays, feel the premium materials, and meet our design consultants to discuss your project.
+        </p>
+        <div class="info-details">
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <p>Plot No. 45, HITEC City Main Road, Madhapur, Hyderabad, Telangana 500081</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <strong>Phone & Email</strong>
+              <p>+91 40 4567 8901<br>hyderabad@lunoraspaces.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div>
+              <strong>Showroom Hours</strong>
+              <p>Monday - Saturday: 10:00 AM - 8:00 PM<br>Sunday: 11:00 AM - 5:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://maps.google.com" target="_blank" class="btn btn-primary showroom-btn">
+          Get Directions ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section>
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Comprehensive interior design solutions for every project</p>
+    </div>
+
+    <div class="design-grid">
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center;">
+        <h3 style="color: white; margin-bottom: 1rem;">Free Consultation</h3>
+        <p class="!text-slate-100">Initial design consultation to understand your vision and project requirements.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center;">
+        <h3 style="color: white; margin-bottom: 1rem;">Design Packages</h3>
+        <p class="!text-slate-100">Flexible design packages tailored to your budget and project scope.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center;">
+        <h3 style="color: white; margin-bottom: 1rem;">Full Execution</h3>
+        <p class="!text-slate-100">Complete project management from concept through final installation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section style="background-color: var(--accent-color);">
+    <div class="section-title">
+      <h2>Frequently Asked Questions</h2>
+      <p>Get answers to common questions about our services</p>
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem;">
+        <h4 style="color: white; margin-bottom: 0.5rem;">How long does a typical project take?</h4>
+        <p class="!text-slate-100">Project timelines vary depending on scope and complexity, typically ranging from 4 to 12 weeks.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem;">
+        <h4 style="color: white; margin-bottom: 0.5rem;">What is your design process?</h4>
+        <p class="!text-slate-100">We start with a consultation, follow with concept development, create detailed plans, and finalize implementation with your approval at each stage.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem;">
+        <h4 style="color: white; margin-bottom: 0.5rem;">Do you work within specific budgets?</h4>
+        <p class="!text-slate-100">Yes, we specialize in creating beautiful designs at every budget level. We discuss your budget upfront to ensure realistic expectations.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem;">
+        <h4 style="color: white; margin-bottom: 0.5rem;">Can you design for renovation projects?</h4>
+        <p class="!text-slate-100">Absolutely! We handle both new construction and renovation projects, working with contractors and construction teams.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px;">
+        <h4 style="color: white; margin-bottom: 0.5rem;">Do you offer virtual consultations?</h4>
+        <p class="!text-slate-100">Yes, we offer virtual design consultations for clients who prefer remote meetings. We can work with you wherever you are.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>LUNORA SPACES</h4>
+        <p>Transforming homes into luxurious sanctuaries with modern interior design expertise.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="designers.html">Designers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <p style="margin-bottom: 1rem;">Connect with us on social media</p>
+        <div style="display: flex; gap: 1rem;">
+          <a href="#" style="color: var(--primary-color); font-weight: 600;">Instagram</a>
+          <a href="#" style="color: var(--primary-color); font-weight: 600;">Pinterest</a>
+          <a href="#" style="color: var(--primary-color); font-weight: 600;">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Lunora Spaces. All rights reserved. | Designed with elegance and care.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

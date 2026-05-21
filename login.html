@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Lunora Spaces</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false,
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>LUNORA</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="designers.html">Designers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="background-image: url('images/login_hero.jpg'); height: 60vh;">
+    <div class="hero-content">
+      <h1>Welcome Back</h1>
+      <p>Access your Lunora Spaces account</p>
+    </div>
+  </section>
+
+  <!-- LOGIN SECTION -->
+  <section>
+    <div class="login-container">
+      <!-- Login Tabs -->
+      <div class="login-tabs">
+        <button class="tab-btn active" data-tab="user-login">User Login</button>
+        <button class="tab-btn" data-tab="admin-login">Admin Login</button>
+      </div>
+
+      <!-- USER LOGIN TAB -->
+      <div id="user-login" class="tab-content active">
+        <form id="user-login-form" class="login-form">
+          <h3>Sign In to Your Account</h3>
+
+          <div class="form-group">
+            <label for="user-email">Email Address *</label>
+            <input type="email" id="user-email" name="email" placeholder="your@email.com">
+            <span class="form-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="user-password">Password *</label>
+            <input type="password" id="user-password" name="password" placeholder="Enter your password">
+            <span class="form-error"></span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <label style="display: flex; align-items: center; font-weight: normal; cursor: pointer;">
+              <input type="checkbox" name="remember" style="width: auto; margin-right: 0.5rem;">
+              Remember me
+            </label>
+            <a href="#" style="color: var(--primary-color); font-weight: 600;">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">Sign In</button>
+
+          <p style="text-align: center; color: var(--text-light);">
+            Don't have an account? <a href="#" style="color: var(--primary-color); font-weight: 600;">Sign up here</a>
+          </p>
+        </form>
+      </div>
+
+      <!-- ADMIN LOGIN TAB -->
+      <div id="admin-login" class="tab-content">
+        <form id="admin-login-form" class="login-form">
+          <h3>Admin Portal Login</h3>
+
+          <div class="form-group">
+            <label for="admin-email">Admin Email *</label>
+            <input type="email" id="admin-email" name="email" placeholder="admin@email.com">
+            <span class="form-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="admin-password">Password *</label>
+            <input type="password" id="admin-password" name="password" placeholder="Enter your password">
+            <span class="form-error"></span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <label style="display: flex; align-items: center; font-weight: normal; cursor: pointer;">
+              <input type="checkbox" name="remember" style="width: auto; margin-right: 0.5rem;">
+              Remember me
+            </label>
+            <a href="#" style="color: var(--primary-color); font-weight: 600;">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-secondary" style="width: 100%;">Admin Sign In</button>
+
+          <p style="text-align: center; color: var(--text-light); margin-top: 1rem; font-size: 0.9rem;">
+            If you're not an admin, please use the User Login tab
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS SECTION -->
+  <section style="background-color: var(--accent-color);">
+    <div class="section-title">
+      <h2>Member Benefits</h2>
+      <p>Enjoy exclusive features when you're logged in</p>
+    </div>
+
+    <div class="design-grid">
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);">
+        <h3 style="color: white; margin-bottom: 1rem;">📁 Save Projects</h3>
+        <p class="!text-slate-100">Keep track of your favorite designs and project inspirations in your personal dashboard.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);">
+        <h3 style="color: white; margin-bottom: 1rem;">💬 Direct Messaging</h3>
+        <p class="!text-slate-100">Communicate directly with our designers and get personalized recommendations.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);">
+        <h3 style="color: white; margin-bottom: 1rem;">🎁 Exclusive Offers</h3>
+        <p class="!text-slate-100">Access member-only discounts, early access to new designs, and special promotions.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);">
+        <h3 style="color: white; margin-bottom: 1rem;">📊 Project Tracking</h3>
+        <p class="!text-slate-100">Monitor the progress of your design projects from concept to completion.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);">
+        <h3 style="color: white; margin-bottom: 1rem;">🎓 Resources</h3>
+        <p class="!text-slate-100">Access design tips, tutorials, and inspiration from our expert designers.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);">
+        <h3 style="color: white; margin-bottom: 1rem;">⭐ Priority Support</h3>
+        <p class="!text-slate-100">Get faster responses and priority support for all your inquiries and questions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY SECTION -->
+  <section>
+    <div class="section-title">
+      <h2>Your Security Matters</h2>
+      <p>We protect your information with industry-leading security standards</p>
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid var(--primary-color);">
+        <h4 style="color: white; margin-bottom: 0.5rem;">🔒 Encrypted Data</h4>
+        <p class="!text-slate-100">All your personal and project information is encrypted using SSL 256-bit encryption.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid var(--primary-color);">
+        <h4 style="color: white; margin-bottom: 0.5rem;">🛡️ Privacy Protection</h4>
+        <p class="!text-slate-100">We never share your information with third parties. Your privacy is our top priority.</p>
+      </div>
+
+      <div class="scroll-reveal !bg-[#4169E1]/50 text-white" style="padding: 2rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+        <h4 style="color: white; margin-bottom: 0.5rem;">✅ Compliance</h4>
+        <p class="!text-slate-100">We comply with GDPR, CCPA, and other international data protection regulations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; text-align: center; border-radius: 12px;">
+    <h2 style="color: white;">New to Lunora Spaces?</h2>
+    <p style="color: #f0f0f0; font-size: 1.1rem; margin-bottom: 2rem;">Create an account to start saving designs and connect with our designers</p>
+    <a href="index.html" class="btn" style="background-color: white; color: var(--primary-color);">Explore More</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>LUNORA SPACES</h4>
+        <p>Transforming homes into luxurious sanctuaries with modern interior design expertise.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="designers.html">Designers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <p style="margin-bottom: 1rem;">Connect with us on social media</p>
+        <div style="display: flex; gap: 1rem;">
+          <a href="#" style="color: var(--primary-color); font-weight: 600;">Instagram</a>
+          <a href="#" style="color: var(--primary-color); font-weight: 600;">Pinterest</a>
+          <a href="#" style="color: var(--primary-color); font-weight: 600;">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Lunora Spaces. All rights reserved. | Designed with elegance and care.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
